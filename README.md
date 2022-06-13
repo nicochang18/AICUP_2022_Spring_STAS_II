@@ -40,87 +40,21 @@ NFNet + DeepLabV3Plus|[tu-eca_nfnet_l2_DeepLabV3Plus.ipynb]()|[tu-eca_nfnet_l2_D
 EfficientNet_V2_s + DeepLabV3Plus|[tu-tf_efficientnet_b6_ns.ipynb]()|[tu-tf_efficientnet_b6_ns.pth]()|[Result 3]()
 Ensemble|[Image_ensemble.ipynb]()|-|[Result]()|
 
-# Instruction
+# Before Running
+Check the path is correct 
+
+Data Folder Structure:  
+```
+DATA PATH  
+        ├Train_Images  
+        ├Train_Annotations_png  
+        ├Public_Image  
+        ├Private_Image  
+        └Predict  
+```
+**Model and weight files are in same folder**  
+
 Please run the codes with this order:
 1. Label Process
 2. Train Models
 3. Ensemble
-
-### 前處理
-需修改資料夾，資料夾內需包含LabelMe之.json檔
-
-```
-folder_path = "{YOUR PATH}"
-
-如 : 
-folder_path = "SEG_Train_Datasets/Train_Annotations/"
-os.listdir(folder_path)[:5]
-```
-
-### 模型訓練以及驗證
-需修改訓練圖片之資料夾
-```
-data_path = "{YOUR PATH}"
-```
-
-如下之`SEG_Train_Datasets`，資料夾內需放子資料夾`Train_Images`及`Train_Annotations_png`，前者存放訓練Image後者存放訓練Mask
-```
-data_path = './SEG_Train_Datasets/'
-
-SEG_Train_Datasets
-        |-> Train_Images
-        |-> Train_Annotations_png
-```
->
-
-改驗證圖片路徑
-```
-tempdir = "{YOUR PATH}"  
-
-如:
-tempdir = "./Pravite_Image1/"
-```
-
-驗證時除了需確認驗證圖片的檔案位置，還須修改權重路徑到你權重下載的位置
-
-```
-model.load_state_dict(torch.load("{YOUR PATH}"))
-```
-
-
-
->
-
-此外因為我三個模型各自的預測結果圖都是預設存到同目錄底下`./Predict`資料夾，所以同時跑三個模型時輸出會被蓋掉，可在模型輸出處做修改
-```
-saverPD = SaveImage(output_dir="{YOUR PATH}", output_ext=".png", output_postfix=f"{Pub_data[i].split('/')[-1].split('.')[0]}",scale=255,separate_folder=False)
-saverPD(test_outputs[0].cpu())
-```
-
-
-### Ensemble Code
-Ensemble時也需要注意三個的檔案位置
-
-```
-path1 = "{Predict Path1}"
-path2 = "{Predict Path2}"
-path3 = "{Predict Path3}"
-```
-
-此外還要注意的是做Ensemble的照片通道數需統一，即 (1716, 942, 1) 或 (1716, 942, 3)，如不是則必須修改程式，建議全部改為單一通道。
-
-1 Channel
-```
-img1 = Image.open(os.path.join(path1, filename))
-img1_ar = np.asarray(img1)
-img1_ar = np.where(img1_ar > 0, 1, 0)
-
-```
-
-3 or more Channel
-```
-img1 = Image.open(os.path.join(path1, filename))
-img1_ar = np.asarray(img1)
-img1_ar = np.where(img1_ar[:, :, 0] > 0, 1, 0)
-
-```
