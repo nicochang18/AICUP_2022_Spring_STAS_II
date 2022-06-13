@@ -1,8 +1,16 @@
 # AICUP_STAS_II
->The followings are the files I used in AI CUP STAS_II competition. If you have any questions, please comment in the Issues Block.
+>he followings are the files I used in AI CUP STAS_II competition. If you have any questions, please comment in the Issues Block.
+
+My score:
+-|Public Data|Private Data|
+--|--|--|
+Rank|5|6|
+Score|0.92|0.92|
 
 # Environment
->NVIDIA DLI envent: Ubuntu 18.04.4 LTS + 16 GB memory + Tesla T4 GPU
+Server: NVIDIA DLI envent (Ubuntu 18.04.4 LTS + 16 GB memory + Tesla T4 GPU)\
+Laguage: Python 3.6.9\
+Pretrained Model: Segmentation Models Pytorch
 
 # Packages
 ```
@@ -24,7 +32,11 @@ NFNet + DeepLabV3Plus|[tu-eca_nfnet_l2_DeepLabV3Plus.ipynb]()|[tu-eca_nfnet_l2_D
 EfficientNet_V2_s + DeepLabV3Plus|[tu-tf_efficientnet_b6_ns.ipynb]()|[tu-tf_efficientnet_b6_ns.pth]()|[Result 3]()
 Ensemble|[Image_ensemble.ipynb]()|-|[Result]()|
 
-# 使用說明
+# Instruction
+Please run the codes with this order:
+1. Label Process
+2. Train Models
+3. Ensemble
 
 ### 前處理
 需修改資料夾，資料夾內需包含LabelMe之.json檔
