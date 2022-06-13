@@ -30,7 +30,7 @@ Score|0.92|0.92|
 !pip install ipywidgets widgetsnbextension
 !jupyter nbextension enable --py widgetsnbextension
 ```
-https://github.com/nicochang18/AICUP_STAS_II/blob/c60273d1b103c1cba6357babac48d8f02ea2be8f/Training_efficientnet_PAN.ipynb
+
 # Models
 Name|Code File|Weight File|Result|
 --|--|--|--|
