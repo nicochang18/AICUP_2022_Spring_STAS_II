@@ -53,8 +53,7 @@ YOUR PATH
         └Predict  
 ```
 **Model and weight files are in same folder**  
-Path for ensemble:  
-The predict image folders are in the same folder with Ensemble.ipyth
+**The predict image folders are in the same folder with Ensemble.ipyth**  
 
 # Run Code
 Please run the codes with this order:
