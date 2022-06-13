@@ -45,7 +45,7 @@ Check the path is correct
 
 Data Folder Structure:  
 ```
-DATA PATH  
+YOUR PATH  
         ├Train_Images  
         ├Train_Annotations_png  
         ├Public_Image  
