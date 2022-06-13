@@ -1,48 +1,28 @@
 # AICUP_STAS_II
-The followings are the files I used in AI CUP STAS_II competition. If you have any questions, please comment in the Issues Block.
+>The followings are the files I used in AI CUP STAS_II competition. If you have any questions, please comment in the Issues Block.
 
 # Environment
 >NVIDIA DLI envent: Ubuntu 18.04.4 LTS + 16 GB memory + Tesla T4 GPU
 
 # Packages
 ```
-pip install monai
-pip install -U Setuptools
-pip install git+https://github.com/qubvel/segmentation_models.pytorch
-pip install adabelief-pytorch==0.2.0
-
-#如果沒有PyTorch的話
-pip install torch
-pip install torchvision
-```
-
-### 如果遇到smp無法使用，有可能是Jupyter Notebook的問題，執行:
-
-```
-pip install ipywidgets widgetsnbextension
-jupyter nbextension enable --py widgetsnbextension
-```
-### 如果是`import cv2`的問題，我自己在兩個不同的伺服器上遇到過
-
-```
-#第一種解法: 降低版本 (NVIDIA DLI Server可行)
-pip install opencv-python==3.4.5.20
-
-#第二種解法: 升級一些東西 (TWCC可行)
-sudo apt update
-sudo apt-get install libsm6 libxrender1 libfontconfig1 libgl1-mesa-glx
+!pip install monai
+!pip install torchvision
+!pip install -U Setuptools
+!pip install git+https://github.com/qubvel/segmentation_models.pytorch
+!pip install adabelief-pytorch==0.2.0
+!pip install ipywidgets widgetsnbextension
+!jupyter nbextension enable --py widgetsnbextension
 ```
 
 # Models
-權重檔皆存放於Google雲端，可自行下載使用
-
 Name|Code File|Weight File|Result|
 --|--|--|--|
 Label Process|[DataPreprocess.ipynb]()|-|
-NFNet + PAN|[tf_efficientnetv2_m_in21ft1k.ipynb]()|[tf_efficientnetv2_m_in21ft1k.pth]()|[模型一結果]()|
-NFNet + DeepLabV3Plus|[tu-eca_nfnet_l2_DeepLabV3Plus.ipynb]()|[tu-eca_nfnet_l2_DeepLabV3Plus.pth]()|[模型二結果]()|
-EfficientNet_V2_s + DeepLabV3Plus|[tu-tf_efficientnet_b6_ns.ipynb]()|[tu-tf_efficientnet_b6_ns.pth]()|[模型三結果]()
-Ensemble|[Image_ensemble.ipynb]()|-|[最後結果]()|
+NFNet + PAN|[tf_efficientnetv2_m_in21ft1k.ipynb]()|[tf_efficientnetv2_m_in21ft1k.pth]()|[Result 1]()|
+NFNet + DeepLabV3Plus|[tu-eca_nfnet_l2_DeepLabV3Plus.ipynb]()|[tu-eca_nfnet_l2_DeepLabV3Plus.pth]()|[Result 2]()|
+EfficientNet_V2_s + DeepLabV3Plus|[tu-tf_efficientnet_b6_ns.ipynb]()|[tu-tf_efficientnet_b6_ns.pth]()|[Result 3]()
+Ensemble|[Image_ensemble.ipynb]()|-|[Result]()|
 
 # 使用說明
 
