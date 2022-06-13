@@ -1,5 +1,5 @@
 # AICUP_STAS_II
->he followings are the files I used in AI CUP STAS_II competition. If you have any questions, please comment in the Issues Block.
+>The followings are the files I used in AI CUP STAS_II competition. If you have any questions, please comment in the Issues Block.
 
 My score:
 -|Public Data|Private Data|
@@ -8,13 +8,20 @@ Rank|5|6|
 Score|0.92|0.92|
 
 # Environment
-Server: NVIDIA DLI envent (Ubuntu 18.04.4 LTS + 16 GB memory + Tesla T4 GPU)\
-Laguage: Python 3.6.9\
+Server: NVIDIA DLI envent (Ubuntu 18.04.4 LTS + 16 GB memory + Tesla T4 GPU)  
+Laguage: Python 3.6.9  
 Pretrained Model: Segmentation Models Pytorch
 
 # Packages
+MONAI --> version 0.8.1  
+Pytorch --> version 1.11.0a0+17540c5  
+TorchVision --> version 0.12.0a0  
+Segmentation_Models_Pytorch --> version 0.3.0-dev  
+adabelief-pytorch --> 0.2.0  
+
 ```
 !pip install monai
+!pip install torch
 !pip install torchvision
 !pip install -U Setuptools
 !pip install git+https://github.com/qubvel/segmentation_models.pytorch
