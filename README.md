@@ -1,16 +1,10 @@
-# AICUP_STAS_Segmentation_II
+# AICUP_STAS_II
+The followings are the files I used in AI CUP STAS_II competition. If you have any questions, please comment in the Issues Block.
 
-# Introduction
-這次很榮幸在AI CUP 2022 肺腺癌病理切片影像之腫瘤氣道擴散偵測競賽 II (影像切割)的比賽中得到
-這次aicup比賽得到Private第七的分數，在這裡分享我程式碼，我的最佳模型為三個模型的Voting Ensemble，當初在訓練的時候，我是三個模型**各自訓練**，並使用PIL與numpy函式庫來進行Ensemble的處理，所以我這裡會分享三份Jupyter Notebook與三份模型，並額外付上Voting Ensemble的程式，然後如果程式使用上有什麼問題或Bug，也歡迎在Issues區留言提問。
+# Environment
+>NVIDIA DLI envent: Ubuntu 18.04.4 LTS + 16 GB memory + Tesla T4 GPU
 
-# 環境與套包
-訓練環境
-```
-TWCC : cm.2xsuper (TWCC 4 GPU + 16 cores + 240GB memory + 120GB share memory)
-映像檔 : pytorch-22.02-py3:latest
-```
-套包
+# Packages
 ```
 pip install monai
 pip install -U Setuptools
@@ -39,16 +33,16 @@ sudo apt update
 sudo apt-get install libsm6 libxrender1 libfontconfig1 libgl1-mesa-glx
 ```
 
-# 模型與權重
+# Models
 權重檔皆存放於Google雲端，可自行下載使用
 
-類別|模型名稱/用途|Jupyter Notebook|權重檔|模型預測結果|
---|--|--|--|--|
-Label前處理|json to png|[DataPreprocess.ipynb]()|-|
-模型一|DeepLabV3Plus + tf_efficientnetv2_m_in21ft1k|[tf_efficientnetv2_m_in21ft1k.ipynb]()|[tf_efficientnetv2_m_in21ft1k.pth]()|[模型一結果]()|
-模型二|DeepLabV3Plus + tu-eca_nfnet_l2|[tu-eca_nfnet_l2_DeepLabV3Plus.ipynb]()|[tu-eca_nfnet_l2_DeepLabV3Plus.pth]()|[模型二結果]()|
-模型三|DeepLabV3Plus + tu-tf_efficientnet_b6_ns|[tu-tf_efficientnet_b6_ns.ipynb]()|[tu-tf_efficientnet_b6_ns.pth]()|[模型三結果]()
-Ensemble|Voting Ensemble|[Image_ensemble.ipynb]()|-|[最後結果]()|
+Name|Code File|Weight File|Result|
+--|--|--|--|
+Label Process|[DataPreprocess.ipynb]()|-|
+NFNet + PAN|[tf_efficientnetv2_m_in21ft1k.ipynb]()|[tf_efficientnetv2_m_in21ft1k.pth]()|[模型一結果]()|
+NFNet + DeepLabV3Plus|[tu-eca_nfnet_l2_DeepLabV3Plus.ipynb]()|[tu-eca_nfnet_l2_DeepLabV3Plus.pth]()|[模型二結果]()|
+EfficientNet_V2_s + DeepLabV3Plus|[tu-tf_efficientnet_b6_ns.ipynb]()|[tu-tf_efficientnet_b6_ns.pth]()|[模型三結果]()
+Ensemble|[Image_ensemble.ipynb]()|-|[最後結果]()|
 
 # 使用說明
 
