@@ -8,17 +8,18 @@ Rank|5|6|
 Score|0.92|0.92|
 
 # Environment
-Server: NVIDIA DLI envent (Ubuntu 18.04.4 LTS + 16 GB memory + Tesla T4 GPU)  
-Laguage: Python 3.6.9  
-Pretrained Model: Segmentation Models Pytorch
+**Server:** NVIDIA DLI envent (Ubuntu 18.04.4 LTS + 16 GB memory + Tesla T4 GPU)  
+**Laguage:** Python 3.6.9  
+**Pretrained Model:** Segmentation Models Pytorch
 
 # Packages
-MONAI --> version 0.8.1  
-Pytorch --> version 1.11.0a0+17540c5  
-TorchVision --> version 0.12.0a0  
-Segmentation_Models_Pytorch --> version 0.3.0-dev  
-adabelief-pytorch --> 0.2.0  
+**MONAI:** version 0.8.1  
+**Pytorch:** version 1.11.0a0+17540c5  
+**TorchVision:** version 0.12.0a0  
+**Segmentation_Models_Pytorch:** version 0.3.0-dev  
+**adabelief-pytorch:** version 0.2.0  
 
+### Code
 ```
 !pip install monai
 !pip install torch
