@@ -43,7 +43,7 @@ Ensemble|[Image_ensemble.ipynb]()|-|[Result]()|
 # Before Running
 Check the path is correct 
 
-Data Folder Structure:  
+**Data Folder Structure:**  
 ```
 YOUR PATH  
         ├Train_Images  
@@ -53,7 +53,10 @@ YOUR PATH
         └Predict  
 ```
 **Model and weight files are in same folder**  
+Path for ensemble:  
+The predict image folders are in the same folder with Ensemble.ipyth
 
+# Run Code
 Please run the codes with this order:
 1. Label Process
 2. Train Models
