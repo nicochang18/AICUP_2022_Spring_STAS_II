@@ -37,7 +37,7 @@ Name|Code File|Weight File|Result|
 Label Process|[LabelProcess.ipynb](https://github.com/nicochang18/AICUP_STAS_II/blob/9e0fdd11a78758a489932799ccf34c7ce162c49d/LabelProcess.ipynb)|-|
 NFNet + PAN|[Training_nfnet_PAN.ipynb.ipynb](https://github.com/nicochang18/AICUP_STAS_II/blob/9e0fdd11a78758a489932799ccf34c7ce162c49d/Training_nfnet_PAN.ipynb)|[tf_efficientnetv2_m_in21ft1k.pth]()|[Result 1]()|
 NFNet + DeepLabV3Plus|[Training_nfnet_deeplab3+.ipynb](https://github.com/nicochang18/AICUP_STAS_II/blob/9e0fdd11a78758a489932799ccf34c7ce162c49d/Training_nfnet_deeplab3+.ipynb)|[tu-eca_nfnet_l2_DeepLabV3Plus.pth]()|[Result 2]()|
-EfficientNet_V2_s + DeepLabV3Plus|Training_efficientnet_deeplab3+.ipynb](https://github.com/nicochang18/AICUP_STAS_II/blob/9e0fdd11a78758a489932799ccf34c7ce162c49d/Training_efficientnet_deeplab3+.ipynb)|[tu-tf_efficientnet_b6_ns.pth]()|[Result 3]()
+EfficientNet_V2_s + DeepLabV3Plus|[Training_efficientnet_deeplab3+.ipynb](https://github.com/nicochang18/AICUP_STAS_II/blob/9e0fdd11a78758a489932799ccf34c7ce162c49d/Training_efficientnet_deeplab3+.ipynb)|[tu-tf_efficientnet_b6_ns.pth]()|[Result 3]()
 Ensemble|[Image_ensemble.ipynb]()|-|[Result]()|
 
 # Before Running
