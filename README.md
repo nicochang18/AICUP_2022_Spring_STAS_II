@@ -4,8 +4,8 @@
 My score:
 -|Public Data|Private Data|
 --|--|--|
-Rank|5|6|
-Score|0.92|0.92|
+Rank|5/307|6/307|
+Score|0.918|0.916|
 
 # Environment
 **Server:** NVIDIA DLI envent (Ubuntu 18.04.4 LTS + 16 GB memory + Tesla T4 GPU)  
