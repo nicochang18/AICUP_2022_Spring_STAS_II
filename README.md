@@ -4,7 +4,7 @@
 My score:
 -|Public Data|Private Data|
 --|--|--|
-Rank|5/307|6/307|
+Rank|5 / 307|6 / 307|
 Score|0.918|0.916|
 
 # Environment
