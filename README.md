@@ -1,11 +1,10 @@
-# AICUP_STAS_II
->The followings are the files I used in AI CUP STAS_II competition. If you have any questions, please comment in the Issues Block.
+# AICUP_2022_Spring_STAS_II
+>Repository for AI CUP STAS_II competition. If you have any questions, please comment in the Issues Block.
 
 My score:
--|Public Data|Private Data|
---|--|--|
-Rank|5 / 307|6 / 307|
-Score|0.918|0.916|
+|Public Rank|Public Score|Private Rank|Private Score|
+|--|--|--|--|
+|5 / 307|0.918|6 / 307|0.916|
 
 # Environment
 **Server:** NVIDIA DLI envent (Ubuntu 18.04.4 LTS + 16 GB memory + Tesla T4 GPU)  
