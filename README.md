@@ -1,17 +1,17 @@
 # AICUP_2022_Spring_STAS_II
->Repository for AI CUP STAS_II competition. If you have any questions, please comment in the Issues Block.
+>Repository for AI CUP STAS_II competition.
 
-My score:
+## Leaderboard
 |Public Rank|Public Score|Private Rank|Private Score|
 |--|--|--|--|
 |5 / 307|0.918|6 / 307|0.916|
 
-# Environment
+## Environment
 **Server:** NVIDIA DLI envent (Ubuntu 18.04.4 LTS + 16 GB memory + Tesla T4 GPU)  
 **Laguage:** Python 3.6.9  
 **Pretrained Model:** Segmentation Models Pytorch
 
-# Packages
+## Packages
 **MONAI:** version 0.8.1  
 **Pytorch:** version 1.11.0a0+17540c5  
 **TorchVision:** version 0.12.0a0  
@@ -30,7 +30,7 @@ My score:
 !jupyter nbextension enable --py widgetsnbextension
 ```
 
-# Models
+## Models
 Name|Code File|Weight File|Result|
 --|--|--|--|
 Label Process|[LabelProcess.ipynb](https://github.com/nicochang18/AICUP_STAS_II/blob/9e0fdd11a78758a489932799ccf34c7ce162c49d/LabelProcess.ipynb)|-|-|
@@ -39,7 +39,7 @@ NFNet + DeepLabV3Plus|[Training_nfnet_deeplab3+.ipynb](https://github.com/nicoch
 EfficientNet_V2_s + DeepLabV3Plus|[Training_efficientnet_PAN.ipynb](https://github.com/nicochang18/AICUP_STAS_II/blob/c60273d1b103c1cba6357babac48d8f02ea2be8f/Training_efficientnet_PAN.ipynb)|[tf_efficientnetv2_s_in21ft1k_PAN.pth](https://drive.google.com/file/d/1kWN7jx7_BrWMRYlOaTHHEEfYf_xLLNZb/view?usp=sharing)|-|
 Ensemble|[Ensemble.ipynb](https://github.com/nicochang18/AICUP_STAS_II/blob/df05d434dec3ce15f7e252d151a143f9a063531b/Ensemble.ipynb)|-|[Result](https://github.com/nicochang18/AICUP_STAS_II/blob/051a60e569a6c78d1593adf3da637a1923ad56b1/Ensemble_Result.zip)|
 
-# Before Running
+## Before Running
 Check the path is correct 
 
 **Data Folder Structure:**  
