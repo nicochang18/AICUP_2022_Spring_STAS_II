@@ -1,5 +1,6 @@
 # AICUP_2022_Spring_STAS_II
->Repository for AI CUP STAS_II competition.
+>Repository for AI CUP STAS_II competition.  
+>[Full report](https://github.com/nicochang18/AICUP_2022_Spring_STAS_II/blob/main/2022AI%20CUP_report.pdf)
 
 ## Leaderboard
 |Public Rank|Public Score|Private Rank|Private Score|
